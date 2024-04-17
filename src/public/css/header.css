@@ -1,0 +1,45 @@
+.header{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background-color: green;
+    vertical-align: top;
+    position: relative;
+    height: 60px;
+}
+
+.header img{
+    display: inline-block;
+    width: 45px;
+    aspect-ratio: 1;
+    position: relative;
+
+}
+
+.header ul{
+    display: inline-flex;
+    width: 70%;
+    margin-top: 8px;
+    position: relative;
+    /* top: 0px; */
+    justify-content: space-around;
+    float: right;
+}
+
+.header ul a{
+    padding: 4px;
+    color: white;
+    font-size: 18px;
+    font-weight: 480;
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.header a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

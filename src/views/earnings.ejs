@@ -1,0 +1,29 @@
+<%- include("./components/header.ejs") %>
+<div class="earning">
+    <ul id="errors" style="display: block;width: 100%;border: peachpuff;padding: 8px;text-align: center;margin: 15px 0px;box-sizing: border-box;" class="errors">
+    </ul>
+    <div class="summary" style="border: 1px solid rgb(227, 227, 227);box-sizing: border-box;width: 100%;padding: 16px;margin-bottom: 40px;" >
+        <div style="display: inline-block;width: 40%;padding: 12px;">
+            <h4 id="total"></h4>
+            <p>total</p>
+        </div>
+        <div style="display: inline-block;width: 40%;padding: 12px;">
+            <h4 id="outstanding"></h4>
+            <p>outstanding</p>
+        </div>
+    </div>
+    <form style="display: inline-block;padding: 16px;width: 90%;max-width: 480px;box-shadow: 1px 1px 8px lightgray;text-align: left;" action="/api/v1/earnings" method="post" class="new-earning">
+        <label style="display: block;width: 90%; padding: 8px;font-size: 18px;color: rgba(0, 0, 0, 0.801);margin: 2px;"  for="year">amount</label>
+        <input style="margin: 10px;height: 35px;border: 1px solid rgba(0, 0, 0, 0.659);display: block;
+        width: 95%;padding: 2px;" required min="0" type="number" name="amount" id="amount-input" placeholder="amount earning" >
+        <label style="display: block;width: 90%; padding: 8px;font-size: 18px;color: rgba(0, 0, 0, 0.801);margin: 2px;"  for="outstanding">outstanding</label>
+        <input style="margin: 10px;height: 35px;border: 1px solid rgba(0, 0, 0, 0.659);display: block;
+        width: 95%;padding: 2px;" default="0"min="0" type="number" name="outstanding" id="outstanding-input" placeholder="amount outstanding" >
+        <button style="display: inline-block;width: 95%;padding: 8px;height: 35px;margin: 10px;color: white;background-color: blue;font-weight: 500;font-size: 18px;border: none;border-radius: 3px;" id="submit" >login</button>
+    </form>
+    <div class="earning-list">
+
+    </div>
+</div>
+<script type="module" src="../../../static/js/earning.js" ></script>
+<%- include("./components/footer.ejs") %>

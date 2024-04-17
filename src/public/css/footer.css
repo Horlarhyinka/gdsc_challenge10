@@ -1,0 +1,43 @@
+.footer{
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 40px 0px 0px;
+    background-color: black;
+    color: white;
+    vertical-align: top;
+    position: relative;
+}
+
+.footer ul{
+    display: inline-block;
+    width: 80%;
+    max-width: 300px;
+    position: relative;
+}
+
+.footer li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.848);
+}
+
+.footer div{
+    display: inline-block;
+    width: 90%;
+    max-width: 240px;
+    position: relative;
+}
+
+.footer img{
+    width: 45px;
+    aspect-ratio: 1;
+}
+
+.footer div p{
+    font-size: 16px;
+    word-break: normal;
+    width: 100%;
+}
