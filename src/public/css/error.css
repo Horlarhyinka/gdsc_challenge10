@@ -1,0 +1,16 @@
+#errors{
+    display: block;
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+    margin: 15px 0px;
+    box-sizing: border-box;
+}
+
+#errors li{
+    display: block;
+    padding: 8px;
+    color: red;
+    border: 1px solid lightcoral; 
+    background-color: rgb(255, 210, 210);
+}

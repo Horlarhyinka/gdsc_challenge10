@@ -1,0 +1,12 @@
+.summary{
+    border-radius: 8px;
+    margin: 25px 0px 35px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.049);
+}
+
+.summary .wrapper{
+    display: inline-block;
+    width: 40%;
+    padding: 12px;
+}

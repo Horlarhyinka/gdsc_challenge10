@@ -1,15 +1,15 @@
+<%- include("./components/header.ejs") %>
 <div class="login" style="text-align: center;">
-    <h1>login</h1>
+    <h1>Admin login</h1>
     <ul id="errors" style="display: block;width: 100%;border: peachpuff;padding: 8px;text-align: center;margin: 15px 0px;box-sizing: border-box;" class="errors">
     </ul>
-    <form style="display: inline-block;padding: 16px;width: 90%;max-width: 480px;box-shadow: 1px 1px 8px lightgray;text-align: left;"  id="login-form" >
-        <label style="display: block;width: 90%; padding: 8px;font-size: 18px;color: rgba(0, 0, 0, 0.801);margin: 2px;" for="username">username</label>
-        <input style="margin: 10px;height: 35px;border: 1px solid rgba(0, 0, 0, 0.659);display: block;
-        width: 95%;padding: 2px;" required min="3" type="text" name="username" id="username-input" placeholder="username" >
-        <label style="display: block;width: 90%; padding: 8px;font-size: 18px;color: rgba(0, 0, 0, 0.801);margin: 2px;"  for="password">password</label>
-        <input style="margin: 10px;height: 35px;border: 1px solid rgba(0, 0, 0, 0.659);display: block;
-        width: 95%;padding: 2px;" required min="3" type="password" name="password" id="password-input" placeholder="password" >
-        <button style="display: inline-block;width: 95%;padding: 8px;height: 35px;margin: 10px;color: white;background-color: blue;font-weight: 500;font-size: 18px;border: none;border-radius: 3px;" id="submit" >login</button>
+    <form id="login-form" class="form-primary" >
+        <label for="username">username</label>
+        <input required min="3" type="text" name="username" id="username-input" placeholder="username" >
+        <label for="password">password</label>
+        <input required min="3" type="password" name="password" id="password-input" placeholder="password" >
+        <button id="submit" >login</button>
     </form>
     <script type="module" src="../../../static/js/login.js" ></script>
 </div>
+<%- include("./components/footer.ejs") %>

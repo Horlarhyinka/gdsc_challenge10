@@ -41,7 +41,6 @@ async function handleLogin(e){
 function showErrror(message="error occured"){
     const childElem = document.createElement("li")
     childElem.innerHTML = message
-    childElem.style="display: block;padding: 8px;color: red;border: 1px solid lightcoral; background-color: rgb(255, 210, 210);" 
     errorsElem.appendChild(childElem)
     setTimeout(()=>{
         errorsElem.removeChild(childElem)

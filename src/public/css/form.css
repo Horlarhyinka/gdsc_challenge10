@@ -1,0 +1,42 @@
+.form-primary{
+    display: inline-block;
+    padding: 16px;
+    width: 90%;
+    max-width: 480px;
+    box-shadow: 1px 1px 8px lightgray;
+    text-align: left;
+}
+
+.form-primary input{
+    margin: 10px;
+    height: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.659);
+    display: block;
+    width: 95%;
+    padding: 8px;
+    border-radius: 2px;
+}
+
+
+.form-primary label{
+    display: block;
+    width: 90%; 
+    padding: 8px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.801);
+    margin: 2px;
+}
+
+.form-primary button{
+    display: inline-block;
+    width: 95%;
+    padding: 12px;
+    /* height: 35px; */
+    margin: 10px;
+    color: white;
+    background-color: rgb(1, 187, 7);
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+}

@@ -1,7 +1,9 @@
 import * as storage from "./storage.js"
+import { formatPrice } from "./factory.js"
 
 const token = storage.getItem("token")
-console.log({token})
+const symbol = "₦"
+
 if(!token || !token.isAdmin)window.location.assign("/login")
 const totalElem = document.querySelector("#total")
 const outstandingElem = document.querySelector("#outstanding")
@@ -12,8 +14,8 @@ fetch("/api/v1/earnings", {headers:{
 .then(res=>res.json())
 .then(res=>{
     const {earnings, total, outstanding} = res
-    outstandingElem.innerHTML = outstanding
-    totalElem.innerHTML = total
+    outstandingElem.innerHTML = symbol+formatPrice(outstanding)
+    totalElem.innerHTML = symbol+formatPrice(total)
     
 })
 .catch(err=>{
@@ -28,7 +30,6 @@ const errorsElem = document.querySelector("#errors")
 function showErrror(message="error occured"){
     const childElem = document.createElement("li")
     childElem.innerHTML = message
-    childElem.style="display: block;padding: 8px;color: red;border: 1px solid lightcoral; background-color: rgb(255, 210, 210);" 
     errorsElem.appendChild(childElem)
     setTimeout(()=>{
         errorsElem.removeChild(childElem)
